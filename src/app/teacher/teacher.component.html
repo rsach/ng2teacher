@@ -1,0 +1,18 @@
+<h1>Hello, {{ teacher.Name }}</h1>
+
+<md-list>
+	 <md-list-item *ngFor=" let student of students">
+	 <p>{{ student.Name }} </p> 
+	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	 <p> {{ student.NumFriends }} </p>
+
+	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			 	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+	     <button md-mini-fab (click) = "addStudent(student)" ><md-icon>check</md-icon></button>
+
+	 </md-list-item>
+ 
+</md-list>
