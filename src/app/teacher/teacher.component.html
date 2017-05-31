@@ -2,7 +2,7 @@
 
 <md-list>
 	 <md-list-item *ngFor=" let student of students">
-	 <p>{{ student.Name }} </p> 
+	 <p>{{ student.Name }} </p>
 	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	 <p> {{ student.NumFriends }} </p>
 
@@ -14,5 +14,24 @@
 	     <button md-mini-fab (click) = "addStudent(student)" ><md-icon>check</md-icon></button>
 
 	 </md-list-item>
- 
+
 </md-list>
+
+<div>
+	<table class="table">
+		 <thead>
+			  <tr>
+					<th>#</th>
+					<th>Student Name</th>
+					<th>TeacherID</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr *ngFor="let student of students">
+				 <th scope="row">1</th>
+				 <td>{{student.Name}}</td>
+				 <td>{{student.TeacherID}}</td>
+			 </tr>
+		 </tbody>
+	 </table>
+</div>
